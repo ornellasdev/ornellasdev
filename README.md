@@ -21,7 +21,7 @@ I'm an IT professional with a background in systems support, technical troublesh
 
 I'm transitioning into **game development and technical game quality assurance**, combining hands-on learning in **Unity (C#)** and **Unreal Engine 5 (Blueprints)** with my experience analyzing technical issues, documenting problems, and working in competitive gaming environments.
 
-I'm particularly interested in joining **international indie studios**, building gameplay systems, investigating defects, and helping teams deliver polished player experiences.
+I'm particularly interested in joining **international game developer studios**, building gameplay systems, investigating defects, and helping teams deliver polished player experiences.
 
 ## 🛠️ Skills & Tools
 
