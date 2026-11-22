@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Yuri Ornellas 👋
+# Hi, I'm Yuri Ornelas 👋
 
 ### Aspiring Game Developer · Technical Game QA · IT & Esports Professional
 
