@@ -37,12 +37,20 @@ I'm particularly interested in joining **international game developer studios**,
 
 My portfolio focuses on **original prototypes created in game engines**, rather than QA exercises using existing commercial games.
 
-### 🟢 Unity Gameplay & QA Sandbox
-**Status: Planned** · Unity · C#
+### 🟢 [Unity QA Sandbox — Game Development + Technical QA](https://github.com/ornellasdev/unity-qa-sandbox)
 
-An original 3D gameplay prototype designed to combine feature implementation with quality assurance.
+**Status: Active portfolio project** · Unity 6 · C# · NUnit · Manual QA · Play Mode
 
-**Planned scope:** character movement, collisions, health and damage, checkpoints, manual functional tests, selected automated tests, bug fixes, and regression verification.
+An original playable 3D graybox prototype with movement, obstacles, damage, health, checkpoints and respawn. The project demonstrates **test design, execution, defect investigation, regression testing and documentation** using my own gameplay systems.
+
+- ✅ **16 local automated tests passed:** 9 Edit Mode + 7 Play Mode
+- ✅ **4 manual functional test cases passed** (tester-reported)
+- ✅ Real trigger and checkpoint integration tests
+- ✅ Full-scene integration validation
+- ✅ Documented failure investigation and successful regression retest
+- 📋 **Next milestone:** GitHub Actions CI, with Unity runner/license setup; not yet configured
+
+**[Explore source code, test reports, evidence and roadmap →](https://github.com/ornellasdev/unity-qa-sandbox)**
 
 ### 🔵 Unreal Engine 5 Technical QA Lab
 **Status: Planned** · Unreal Engine 5 · Blueprints
@@ -51,7 +59,7 @@ An original interactive prototype to explore gameplay logic, functional testing,
 
 **Planned scope:** third-person controls, interactive doors and objects, event triggers, gameplay state validation, functional test scenarios, and documented defect resolution.
 
-> As these projects progress, I will add source code, test cases, execution results, and reproducible evidence. Planned work is not presented as completed work.
+> The Unity portfolio contains implemented code and locally executed tests. The Unreal Engine 5 lab is still planned. Local test results do not imply independent CI validation.
 
 ## 🏆 Esports Background
 
