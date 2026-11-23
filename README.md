@@ -48,7 +48,7 @@ An original playable 3D graybox prototype with movement, obstacles, damage, heal
 - ✅ Real trigger and checkpoint integration tests
 - ✅ Full-scene integration validation
 - ✅ Documented failure investigation and successful regression retest
-- 📋 **Next milestone:** GitHub Actions CI, with Unity runner/license setup; not yet configured
+- 📋 **CI:** GitHub Actions workflow published for Edit Mode and Play Mode; Unity license setup and first verified run are pending
 
 **[Explore source code, test reports, evidence and roadmap →](https://github.com/ornellasdev/unity-qa-sandbox)**
 
