@@ -1,73 +1,79 @@
 <div align="center">
 
-# Hi, I'm Yuri Ornelas 👋
+# Yuri Ornellas 👋
 
-### Aspiring Game Developer · Technical Game QA · IT & Esports Professional
+### Junior Game Development · Technical Game QA · Technical Operations
 
-**Unity · Unreal Engine 5 · C# · Blueprints · Linux · Git**
+**Unity 6 · C# · NUnit · Python · GitHub Actions · Linux · Unreal Engine 5 (learning)**
 
-Based in Brazil 🇧🇷 · Open to remote international opportunities and relocation
+📍 Brazil · Open to international remote opportunities and relocation
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yurivillarornelas/)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yurivillarornelas@live.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Projects-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ornellasdev)
 
 </div>
 
 ---
 
-## 🎮 About Me
+## About me
 
-I'm an IT professional with a background in systems support, technical troubleshooting, incident investigation, and operations, alongside **12+ years of involvement in esports**.
+I'm a Brazilian IT and esports professional transitioning into **game development and technical game quality assurance**. My background includes systems support, incident investigation, troubleshooting, project and technical operations, and **12+ years in esports**.
 
-I'm transitioning into **game development and technical game quality assurance**, combining hands-on learning in **Unity (C#)** and **Unreal Engine 5 (Blueprints)** with my experience analyzing technical issues, documenting problems, and working in competitive gaming environments.
+I'm building hands-on experience through **original game prototypes**, C# gameplay code, Unity's testing framework, manual gameplay test design, regression investigations, and repeatable CI checks. I enjoy analyzing why things break, building fixes, and providing evidence that a change actually works.
 
-I'm particularly interested in joining **international game developer studios**, building gameplay systems, investigating defects, and helping teams deliver polished player experiences.
+I'm seeking opportunities to learn and contribute alongside game-development teams — especially in **Junior Game QA, Technical QA, Junior Game Development, gameplay testing, and technical operations**.
 
-## 🛠️ Skills & Tools
+## Featured project — Unity QA Sandbox
 
-| Area | Skills & technologies |
-| --- | --- |
-| **Game development** | Unity, Unreal Engine 5, C#, Blueprint visual scripting, gameplay prototyping |
-| **Game QA — developing skills** | Manual and exploratory testing, test case design, bug reproduction, regression testing, gameplay and UI validation |
-| **Programming & workflow** | C#, Python, Bash/Shell, SQL fundamentals, Git, GitHub, VS Code |
-| **IT & systems** | Windows, Linux, troubleshooting, incident management, technical documentation, IT service operations |
-| **Team experience** | Esports operations, coaching, competitive gameplay analysis, cross-functional coordination |
+### 🎮 [Unity QA Sandbox: Original gameplay prototype + Technical QA portfolio](https://github.com/ornellasdev/unity-qa-sandbox)
 
-## 🧪 Original Game Development + QA Portfolio
+[![Unity](https://img.shields.io/badge/Unity-6.6-222222?logo=unity)](https://github.com/ornellasdev/unity-qa-sandbox)
+![C#](https://img.shields.io/badge/C%23-NUnit-512BD4)
+[![Repository Validation](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/repository-validation.yml/badge.svg)](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/repository-validation.yml)
+[![C# Static Analysis](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/csharp-static-analysis.yml/badge.svg)](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/csharp-static-analysis.yml)
 
-My portfolio focuses on **original prototypes created in game engines**, rather than QA exercises using existing commercial games.
+A playable Unity 3D graybox project featuring character movement, jumping, solid obstacles, health and damage triggers, checkpoint activation, and respawn. I use the project to practice both **implementing gameplay systems** and **testing them systematically**.
 
-### 🟢 [Unity QA Sandbox — Game Development + Technical QA](https://github.com/ornellasdev/unity-qa-sandbox)
+| Demonstrated work | Result |
+|---|---|
+| **Unity Edit Mode / NUnit** | **22/22 PASS locally** — health and checkpoint tests, including negative/boundary cases |
+| **Unity Play Mode** | **7/7 PASS locally** — damage, respawn, physics triggers and serialized-scene integration |
+| **Unity testing total** | **29/29 PASS locally**, documented in [RUN-007](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-007.md) with [screenshot 1](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Evidence/RUN-007(1).png) and [screenshot 2](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Evidence/RUN-007(2).png) |
+| **Manual gameplay QA** | Movement, collision, jump, initial/checkpoint respawn; [RUN-002 report](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-002.md) and [gameplay/respawn video](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Evidence/RUN-002-Gameplay-Respawn.mp4) (video covers part of the reported scenarios) |
+| **License-free GitHub Actions** | Repository validation, C# syntax and Unity-pattern heuristics; verified [successful CI run](https://github.com/ornellasdev/unity-qa-sandbox/actions/runs/45102487210) |
+| **Python analyzer regression tests** | **35/35 PASS**, **98.1% Python line coverage** (156/159), 13 C# files checked, zero static findings |
 
-**Status: Active portfolio project** · Unity 6 · C# · NUnit · Manual QA · Play Mode
+**What I've worked on:** NUnit test design, C# gameplay systems, negative-path testing, physics-trigger scenarios, bug reproduction, regression reporting, investigating false-positive static-analysis alerts, Python automation, and automated QA artifacts.
 
-An original playable 3D graybox prototype with movement, obstacles, damage, health, checkpoints and respawn. The project demonstrates **test design, execution, defect investigation, regression testing and documentation** using my own gameplay systems.
+**Clear scope:** The 29 Unity tests passed **in a local Unity Editor**, not in hosted CI. The **98.1% coverage measures the Python static analyzer**, not the Unity game's C# gameplay code. Hosted Unity Edit Mode / Play Mode CI has a workflow scaffold but is not yet running with an authorized license.
 
-- ✅ **16 local automated tests passed:** 9 Edit Mode + 7 Play Mode
-- ✅ **4 manual functional test cases passed** (tester-reported)
-- ✅ Real trigger and checkpoint integration tests
-- ✅ Full-scene integration validation
-- ✅ Documented failure investigation and successful regression retest
-- 📋 **CI:** GitHub Actions workflow published for Edit Mode and Play Mode; Unity license setup and first verified run are pending
+**[Explore the full project, reports, code and roadmap](https://github.com/ornellasdev/unity-qa-sandbox)**
 
-**[Explore source code, test reports, evidence and roadmap →](https://github.com/ornellasdev/unity-qa-sandbox)**
+## Skills and toolkit
 
-### 🔵 Unreal Engine 5 Technical QA Lab
-**Status: Planned** · Unreal Engine 5 · Blueprints
+| Focus | Tools and practices |
+|---|---|
+| **Game development** | Unity 6, C#, gameplay prototyping, Unity components and collision/trigger systems |
+| **Technical Game QA** | Manual functional testing, negative/boundary tests, NUnit Edit Mode and Play Mode, reproduction steps, regression reports |
+| **Automation & quality** | GitHub Actions, Python, Tree-sitter C# parsing, static heuristics, `coverage.py`, test artifacts |
+| **Engineering workflow** | Git, GitHub, Linux (CachyOS), Bash/Shell, troubleshooting, documentation |
+| **Learning / next focus** | Unreal Engine 5, Blueprint scripting, stronger gameplay integration tests and tooling |
+| **Professional background** | IT systems support and technical operations, esports management, coaching, team coordination |
 
-An original interactive prototype to explore gameplay logic, functional testing, and debugging.
+## Portfolio roadmap
 
-**Planned scope:** third-person controls, interactive doors and objects, event triggers, gameplay state validation, functional test scenarios, and documented defect resolution.
+**Active:** [Unity QA Sandbox](https://github.com/ornellasdev/unity-qa-sandbox) — improve manual-test evidence, preserve test execution metadata, extend regression scenarios and evaluate authorized Unity CI.
 
-> The Unity portfolio contains implemented code and locally executed tests. The Unreal Engine 5 lab is still planned. Local test results do not imply independent CI validation.
+**Planned:** Unreal Engine 5 Technical QA Lab — an original prototype exploring Blueprint interactions, triggers, state transitions, functional and exploratory test cases. *Not yet presented as implemented work.*
 
-## 🏆 Esports Background
+## Esports experience
 
-Over **12 years of involvement in esports**, including competitive operations, team management, coaching, and tournament-related projects, with experience associated with **ESL Gaming, INTZ, and Isurus Gaming**.
+I bring **12+ years of esports involvement**, including competitive operations, coaching, team management and tournament-related projects, with experience associated with **ESL Gaming, INTZ and Isurus Gaming**.
 
-This work strengthened my understanding of competitive gameplay, player experience, communication, scheduling, and structured problem-solving.
+Competitive esports strengthened my communication, high-pressure troubleshooting, collaborative decision-making and understanding of player experience — skills I am now applying to game development and QA.
 
-## 🎓 Education & Certifications
+## Education and certifications
 
 - Bachelor's Degree — Computer Engineering
 - Bachelor's Degree — Advertising & Social Communication
@@ -76,21 +82,21 @@ This work strengthened my understanding of competitive gameplay, player experien
 - ITIL Foundation
 - Scrum Master Professional Certification
 
-## 🌍 Opportunities
+## Open to opportunities
 
-I'm interested in **Junior Game QA**, **Technical QA**, **Junior Game Development**, and **Game Development Support** opportunities.
+I'm interested in **Junior Game QA / QA Tester, Technical QA, Junior Game Developer, and Game Development Support** roles, especially with international studios.
 
-- **Location:** Brazil
-- **Languages:** Portuguese (native), English (fluent), Spanish (intermediate)
-- **Availability:** 30+ hours/week
-- **Work preferences:** Remote, part-time, full-time, or contract; open to relocation
+**Languages:** Portuguese (native) · English (fluent) · Spanish (intermediate)  
+**Location:** Brazil · Open to remote work and relocation
 
 ---
 
 <div align="center">
 
-**Let's connect and build better games.**
+### Let's build and test better games.
 
 [LinkedIn](https://www.linkedin.com/in/yurivillarornelas/) · [Email](mailto:yurivillarornelas@live.com) · [GitHub](https://github.com/ornellasdev)
+
+<sub>Portfolio work shown here is self-directed learning and project experience, not a claim of prior paid studio Game QA employment.</sub>
 
 </div>
