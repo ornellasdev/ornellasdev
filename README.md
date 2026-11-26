@@ -28,11 +28,11 @@ I'm a Brazilian IT and esports professional moving into game development and tec
 | **Unreal Engine 5.9 Preview 2** | A Blueprint control room with two terminals and a powered security door. I investigate what players can see, when their inputs take effect and whether they can pass the moving door. | [How I found and fixed a readability issue in the control room](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#case-study--making-the-control-room-terminals-readable) |
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ornellasdev&amp;layout=compact&amp;theme=dracula" alt="Most used languages in Yuri's public repositories" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ornellasdev&amp;layout=compact&amp;theme=dracula&amp;title_color=58A6FF" alt="Most used languages in Yuri's public repositories" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ornellasdev&amp;show_icons=true&amp;theme=dracula&amp;custom_title=Yuri%20Ornellas%27%20GitHub%20Stats" alt="Yuri Ornellas' GitHub activity statistics" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ornellasdev&amp;show_icons=true&amp;theme=dracula&amp;custom_title=Yuri%20Ornellas%27%20GitHub%20Stats&amp;title_color=58A6FF&amp;ring_color=58A6FF" alt="Yuri Ornellas' GitHub activity statistics" />
 </p>
 
 <p align="center">
