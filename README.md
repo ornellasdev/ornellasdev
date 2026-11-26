@@ -54,7 +54,7 @@ A playable Unity 3D graybox project featuring character movement, jumping, solid
 
 | Focus | Tools and practices |
 |---|---|
-| **Game development** | Unity 6, C#, gameplay prototyping, Unity components and collision/trigger systems |
+| **Game development** | Unity 6, C#, Unreal Engine 5 Blueprints, gameplay prototyping, collision and trigger systems |
 | **Technical Game QA** | Manual functional testing, negative/boundary tests, NUnit Edit Mode and Play Mode, reproduction steps, regression reports |
 | **Automation & quality** | GitHub Actions, Python, Tree-sitter C# parsing, static heuristics, `coverage.py`, test artifacts |
 | **Engineering workflow** | Git, GitHub, Linux (CachyOS), Bash/Shell, troubleshooting, documentation |
@@ -65,7 +65,9 @@ A playable Unity 3D graybox project featuring character movement, jumping, solid
 
 **Active:** [Unity QA Sandbox](https://github.com/ornellasdev/unity-qa-sandbox) — improve manual-test evidence, preserve test execution metadata, extend regression scenarios and evaluate authorized Unity CI.
 
-**Planned:** Unreal Engine 5 Technical QA Lab — an original prototype exploring Blueprint interactions, triggers, state transitions, functional and exploratory test cases. *Not yet presented as implemented work.*
+**Active:** [Unreal Engine 5 Technical QA Lab](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab) — a playable control room built with Blueprints. I use a powered security door to test interaction range, repeated inputs and collision. Four functional cases passed locally on Linux. A gameplay recording exposed a contrast issue, which I fixed and retested from the player's view. Exploratory testing also checked terminal re-entry during opening and how the room resets in a fresh session.
+
+[Gameplay video](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-001/control-room.mp4) · [Readability fix and regression results](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-002/README.md) · [Exploratory report](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-003/README.md)
 
 ## Esports experience
 
