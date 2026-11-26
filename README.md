@@ -24,6 +24,18 @@ I'm building hands-on experience through **original game prototypes**, C# gamepl
 
 I'm seeking opportunities to learn and contribute alongside game-development teams — especially in **Junior Game QA, Technical QA, Junior Game Development, gameplay testing, and technical operations**.
 
+## Portfolio highlights
+
+**Unity QA Sandbox · C#, NUnit and automation.** I tested health and checkpoints in Edit Mode and exercised damage triggers and respawn in Play Mode. All 29 tests passed locally. [Unity test evidence](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-007.md) · [C# static analysis workflow](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/csharp-static-analysis.yml)
+
+**Unreal Engine 5 · [How I found and fixed a readability issue in the control room](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#case-study--making-the-control-room-terminals-readable)**. Four gameplay tests passed, yet the player-view recording showed how hard it was to tell whether pressing E had restored power.
+
+| Before the fix | After the fix |
+| --- | --- |
+| ![Power terminal face with no readable confirmation](https://raw.githubusercontent.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/9d9e5e061f75c4b3f65e894c71a026e7f33b4ebe/qa/case-studies/terminal-readability/before.jpg) | ![Power terminal labeled POWER with POWER ON visible after interaction](https://raw.githubusercontent.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/9d9e5e061f75c4b3f65e894c71a026e7f33b4ebe/qa/case-studies/terminal-readability/after.jpg) |
+
+I also measured player contact with the rising door and added a Blueprint Functional Test Actor that presses E and checks the unpowered terminal’s message and the door state. [Collision at three simulation rates](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-007/README.md) · [Native Blueprint test and result](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-008/README.md)
+
 ## Featured project — Unity QA Sandbox
 
 ### 🎮 [Unity QA Sandbox: Original gameplay prototype + Technical QA portfolio](https://github.com/ornellasdev/unity-qa-sandbox)
