@@ -4,7 +4,7 @@
 
 ### Junior Game Development · Technical Game QA · Technical Operations
 
-**Unity 6 · C# · NUnit · Python · GitHub Actions · Linux · Unreal Engine 5 (learning)**
+**Unity 6 · C# · NUnit · Unreal Engine 5 · Blueprints · Python · GitHub Actions · Linux**
 
 📍 Brazil · Open to international remote opportunities and relocation
 
@@ -18,68 +18,57 @@
 
 ## About me
 
-I'm a Brazilian IT and esports professional transitioning into **game development and technical game quality assurance**. My background includes systems support, incident investigation, troubleshooting, project and technical operations, and **12+ years in esports**.
-
-I'm building hands-on experience through **original game prototypes**, C# gameplay code, Unity's testing framework, manual gameplay test design, regression investigations, and repeatable CI checks. I enjoy analyzing why things break, building fixes, and providing evidence that a change actually works.
-
-I'm seeking opportunities to learn and contribute alongside game-development teams — especially in **Junior Game QA, Technical QA, Junior Game Development, gameplay testing, and technical operations**.
+I'm a Brazilian IT and esports professional moving into game development and technical game QA. I build small playable prototypes so I can follow a problem from the player's input through gameplay code, collision and on-screen feedback. My background includes systems support, incident investigation and technical operations.
 
 ## Portfolio highlights
 
-**Unity QA Sandbox · C#, NUnit and automation.** I tested health and checkpoints in Edit Mode and exercised damage triggers and respawn in Play Mode. All 29 tests passed locally. [Unity test evidence](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-007.md) · [C# static analysis workflow](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/csharp-static-analysis.yml)
+| Engine | What I built and tested | Start here |
+| --- | --- | --- |
+| **Unity 6.6** | A C# sandbox for health, damage, checkpoints and respawn. I test model boundaries in Edit Mode and scene behavior in Play Mode. | [29 local Unity tests with screenshots and execution records](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-008.md) |
+| **Unreal Engine 5.9 Preview 2** | A Blueprint control room with two terminals and a powered security door. I investigate what players can see, when their inputs take effect and whether they can pass the moving door. | [How I found and fixed a readability issue in the control room](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#case-study--making-the-control-room-terminals-readable) |
 
-**Unreal Engine 5 · [How I found and fixed a readability issue in the control room](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#case-study--making-the-control-room-terminals-readable)**. Four gameplay tests passed, yet the player-view recording showed how hard it was to tell whether pressing E had restored power.
+## Unity QA Sandbox
+
+The player can move, jump, take damage, activate a checkpoint and respawn. One question guided my testing: when health reaches zero after a checkpoint, do the health model, respawn position and scene triggers agree? [Project and playable scene](https://github.com/ornellasdev/unity-qa-sandbox#run-the-project-and-tests-locally)
+
+| Layer | Evidence |
+| --- | --- |
+| **C# and NUnit · local Unity Editor** | **22/22 Edit Mode** tests passed for health and checkpoint models, including invalid inputs and large healing values. **7/7 Play Mode** tests passed for damage, health recovery, physical triggers and scene integration. RUN-008 includes Test Runner screenshots and before/after Git snapshots, which recorded local changes during execution. [Unity RUN-008](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-008.md) |
+| **Regression investigation** | An earlier full-scene run passed 4 of 7 Play Mode tests. After adjusting scene loading and teardown, the retest passed all 7. [Investigation and retest](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-006.md) |
+| **Manual gameplay QA** | Four cases covered movement, jumping, collision and respawn. The clip shows damage and health recovery. [Manual report](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-002.md) · [Gameplay clip](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Evidence/RUN-002-Gameplay-Respawn.mp4) |
+| **GitHub Actions · static checks** | CI validates repository structure and scans C# syntax and Unity-specific patterns. The recorded run checked 13 C# files with zero findings. The Python analyzer passed **35/35** regression tests with **98.1% line coverage** of its own code. Hosted Unity Test Runner execution remains a roadmap item. [Verified CI run](https://github.com/ornellasdev/unity-qa-sandbox/actions/runs/45102487210) |
+
+**Try it:** open the project in Unity Hub with editor `6000.6.10f1`, load `Assets/Scenes/QASandbox.unity` and press Play. To repeat the local suites, open **Window → General → Test Runner** and run Edit Mode and Play Mode separately. [Setup and test commands](https://github.com/ornellasdev/unity-qa-sandbox#run-the-project-and-tests-locally)
+
+## Unreal Engine 5 Technical QA Lab
+
+**[How I found and fixed a readability issue in the control room](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#case-study--making-the-control-room-terminals-readable).** Four gameplay tests passed, yet the recording showed a player-facing defect. Pressing E restored power, but the terminal gave no readable confirmation. I moved the label onto the terminal face, adjusted the lighting and connected the display to the Blueprint state. At the same interaction point, the player can now read **POWER ON**.
 
 | Before the fix | After the fix |
 | --- | --- |
 | ![Power terminal face with no readable confirmation](https://raw.githubusercontent.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/9d9e5e061f75c4b3f65e894c71a026e7f33b4ebe/qa/case-studies/terminal-readability/before.jpg) | ![Power terminal labeled POWER with POWER ON visible after interaction](https://raw.githubusercontent.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/9d9e5e061f75c4b3f65e894c71a026e7f33b4ebe/qa/case-studies/terminal-readability/after.jpg) |
 
-I also measured player contact with the rising door and added a Blueprint Functional Test Actor that presses E and checks the unpowered terminal’s message and the door state. [Collision at three simulation rates](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-007/README.md) · [Native Blueprint test and result](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-008/README.md)
+| Layer | Evidence |
+| --- | --- |
+| **Gameplay regression · local Unreal sessions** | **6/6** cases passed on Linux. They cover an unpowered door, interaction range, repeated input and collision during opening. One probe moved the player just **2 cm** across the terminal's interaction boundary. [Range boundary](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-005/README.md) · [Six-case results](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-006/README.md) |
+| **Collision investigation** | With forward input held, I sampled the player and door positions at **30, 60 and 120 simulated fps**. The player cleared the panel 0.617–0.633 simulated seconds after opening began. [Measurements and reproduction steps](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-007/README.md) |
+| **Native Blueprint test · Unreal Automation** | A Functional Test Actor presses E, reads the terminal's Text Render component and checks that the unpowered door stays closed. The editor reported **1 pass, zero warnings and zero errors**. [Blueprint and exported result](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-008/README.md) |
+| **Exploratory and visual QA** | I checked the new messages from the player's viewpoint, then probed re-entry during motion, repeated inputs after opening and reset in a fresh session. [Visual retest](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-002/README.md) · [Exploratory report](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-003/README.md) |
+| **GitHub Actions · log verification** | Five Python tests replay recorded evidence. They check that the verifier accepts valid runs and rejects a duplicate opening, a missing sample or passage through a closed door. [Verified CI run](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/actions/runs/45730585349) |
 
-## Featured project — Unity QA Sandbox
-
-### 🎮 [Unity QA Sandbox: Original gameplay prototype + Technical QA portfolio](https://github.com/ornellasdev/unity-qa-sandbox)
-
-[![Unity](https://img.shields.io/badge/Unity-6.6-222222?logo=unity)](https://github.com/ornellasdev/unity-qa-sandbox)
-![C#](https://img.shields.io/badge/C%23-NUnit-512BD4)
-[![Repository Validation](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/repository-validation.yml/badge.svg)](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/repository-validation.yml)
-[![C# Static Analysis](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/csharp-static-analysis.yml/badge.svg)](https://github.com/ornellasdev/unity-qa-sandbox/actions/workflows/csharp-static-analysis.yml)
-
-A playable Unity 3D graybox project featuring character movement, jumping, solid obstacles, health and damage triggers, checkpoint activation, and respawn. I use the project to practice both **implementing gameplay systems** and **testing them systematically**.
-
-| Demonstrated work | Result |
-|---|---|
-| **Unity Edit Mode / NUnit** | **22/22 PASS locally** — health and checkpoint tests, including negative/boundary cases |
-| **Unity Play Mode** | **7/7 PASS locally** — damage, respawn, physics triggers and serialized-scene integration |
-| **Unity testing total** | **29/29 PASS locally**, documented in [RUN-007](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-007.md) with [screenshot 1](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Evidence/RUN-007(1).png) and [screenshot 2](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Evidence/RUN-007(2).png) |
-| **Manual gameplay QA** | Movement, collision, jump, initial/checkpoint respawn; [RUN-002 report](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-002.md) and [gameplay/respawn video](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Evidence/RUN-002-Gameplay-Respawn.mp4) (video covers part of the reported scenarios) |
-| **License-free GitHub Actions** | Repository validation, C# syntax and Unity-pattern heuristics; verified [successful CI run](https://github.com/ornellasdev/unity-qa-sandbox/actions/runs/45102487210) |
-| **Python analyzer regression tests** | **35/35 PASS**, **98.1% Python line coverage** (156/159), 13 C# files checked, zero static findings |
-
-**What I've worked on:** NUnit test design, C# gameplay systems, negative-path testing, physics-trigger scenarios, bug reproduction, regression reporting, investigating false-positive static-analysis alerts, Python automation, and automated QA artifacts.
-
-**Clear scope:** The 29 Unity tests passed **in a local Unity Editor**, not in hosted CI. The **98.1% coverage measures the Python static analyzer**, not the Unity game's C# gameplay code. Hosted Unity Edit Mode / Play Mode CI has a workflow scaffold but is not yet running with an authorized license.
-
-**[Explore the full project, reports, code and roadmap](https://github.com/ornellasdev/unity-qa-sandbox)**
+**Try it:** open `ControlRoomLab.uproject` in Unreal Engine 5.9 Preview 2. Move with WASD, look with the mouse and press E at each terminal. To inspect the native test, search for **UnpoweredDoor** in **Session Frontend → Automation**. [Gameplay clip](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-001/control-room.mp4) · [Local regression command](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#run-the-functional-regression)
 
 ## Skills and toolkit
 
-| Focus | Tools and practices |
-|---|---|
-| **Game development** | Unity 6, C#, Unreal Engine 5 Blueprints, gameplay prototyping, collision and trigger systems |
-| **Technical Game QA** | Manual functional testing, negative/boundary tests, NUnit Edit Mode and Play Mode, reproduction steps, regression reports |
-| **Automation & quality** | GitHub Actions, Python, Tree-sitter C# parsing, static heuristics, `coverage.py`, test artifacts |
-| **Engineering workflow** | Git, GitHub, Linux (CachyOS), Bash/Shell, troubleshooting, documentation |
-| **Learning / next focus** | Unreal Engine 5, Blueprint scripting, stronger gameplay integration tests and tooling |
-| **Professional background** | IT systems support and technical operations, esports management, coaching, team coordination |
+- **Gameplay programming:** C# components and models in Unity, Blueprint interactions and state transitions in Unreal.
+- **Technical QA:** exploratory charters, negative and boundary cases, collision sampling, defect reproduction, visual retesting and execution reports.
+- **Automation and tooling:** NUnit, Unity Test Framework, Unreal Functional Testing, Python, Tree-sitter C#, GitHub Actions and Bash on Linux.
+- **Technical operations:** incident investigation, troubleshooting, documentation and cross-team coordination.
 
 ## Portfolio roadmap
 
-**Active:** [Unity QA Sandbox](https://github.com/ornellasdev/unity-qa-sandbox) — improve manual-test evidence, preserve test execution metadata, extend regression scenarios and evaluate authorized Unity CI.
-
-**Active:** [Unreal Engine 5 Technical QA Lab](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab) — a playable control room built with Blueprints. I use a powered security door to test interaction range, repeated inputs and collision. Six automated functional cases passed locally on Linux, including a 2 cm interaction boundary check and a moving-door collision test repeated at [30, 60 and 120 simulated fps](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-007/README.md). A gameplay recording exposed a contrast issue, which I fixed and retested from the player's view. Exploratory testing also checked terminal re-entry during opening and how the room resets in a fresh session.
-
-**[Case study: How I fixed an unreadable power terminal](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#case-study--making-the-control-room-terminals-readable)** · [Gameplay video](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-001/control-room.mp4) · [Readability fix and regression results](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-002/README.md) · [Exploratory report](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-003/README.md) · [Six-case regression](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab/blob/main/qa/runs/RUN-006/README.md)
+- **Unity:** extend video evidence for the initial and checkpoint respawn paths and evaluate licensed CI for the Unity test suites. [Unity roadmap](https://github.com/ornellasdev/unity-qa-sandbox#roadmap)
+- **Unreal:** the next proposed milestone is an acceptance test of a packaged Linux build, covering startup, controls, terminal feedback, passage and restart. [Completed Unreal runs](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#test-runs-and-evidence)
 
 ## Esports experience
 
