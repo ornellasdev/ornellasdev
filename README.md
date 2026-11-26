@@ -27,6 +27,23 @@ I'm a Brazilian IT and esports professional moving into game development and tec
 | **Unity 6.6** | A C# sandbox for health, damage, checkpoints and respawn. I test model boundaries in Edit Mode and scene behavior in Play Mode. | [29 local Unity tests with screenshots and execution records](https://github.com/ornellasdev/unity-qa-sandbox/blob/main/Docs/TEST_EXECUTION_REPORT_RUN-008.md) |
 | **Unreal Engine 5.9 Preview 2** | A Blueprint control room with two terminals and a powered security door. I investigate what players can see, when their inputs take effect and whether they can pass the moving door. | [How I found and fixed a readability issue in the control room](https://github.com/ornellasdev/Unreal-Engine-5-Technical-QA-Lab#case-study--making-the-control-room-terminals-readable) |
 
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ornellasdev&amp;layout=compact&amp;theme=dracula" alt="Most used languages in Yuri's public repositories" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ornellasdev&amp;show_icons=true&amp;theme=dracula&amp;custom_title=Yuri%20Ornellas%27%20GitHub%20Stats" alt="Yuri Ornellas' GitHub activity statistics" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Unity-Dark.svg" width="42" height="42" alt="Unity" title="Unity" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CS.svg" width="42" height="42" alt="C#" title="C#" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/UnrealEngine.svg" width="42" height="42" alt="Unreal Engine" title="Unreal Engine" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg" width="42" height="42" alt="Python" title="Python" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/GithubActions-Dark.svg" width="42" height="42" alt="GitHub Actions" title="GitHub Actions" />
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Linux-Dark.svg" width="42" height="42" alt="Linux" title="Linux" />
+</p>
+
 ## Unity QA Sandbox
 
 The player can move, jump, take damage, activate a checkpoint and respawn. One question guided my testing: when health reaches zero after a checkpoint, do the health model, respawn position and scene triggers agree? [Project and playable scene](https://github.com/ornellasdev/unity-qa-sandbox#run-the-project-and-tests-locally)
